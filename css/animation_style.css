@@ -1,0 +1,59 @@
+
+
+
+
+
+
+
+
+html, body{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+
+#glass, #sky, #lane, #road{
+	  height: 33%;
+  width: 100%;
+  position: relative;
+}
+  
+#lane {
+top: 50%;
+height: 0px;
+box-sizing: border-box;
+border: 5px dashed white;
+
+}
+
+
+#glass{
+	background: seagreen;
+}
+
+#road{background: dimgrey;
+box-sizing: border-box;
+border-top: 10px solid grey;}
+
+/*body {background: skyblue;}
+*/
+
+#sky { 
+	background: skyblue; }
+
+@keyframes drive{
+	from {
+
+
+/*100%{transform: translatex(0px) rotate(0deg);}*/
+
+left: 0;
+
+	}
+	to{left: 100%;}
+	}
+
+	#moria{ width: 20%;
+	position: relative;
+animation: drive 3.1415s infinite;}
